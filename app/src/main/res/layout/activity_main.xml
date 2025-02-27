@@ -7,4 +7,75 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/textDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a Distancia"
+        android:textColorHint="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distancia em KM"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/textPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o preço"
+        android:textColorHint="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preço em R$"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/textAutonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a autonomia"
+        android:textColorHint="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autonomia em Km/l"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="O custo será de: "
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+    <TextView
+
+        android:id="@+id/textValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R$ 0.00"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calcular"
+        android:textColorHint="@color/black"
+        android:textSize="18dp" />
+
+
 </LinearLayout>
