@@ -2,6 +2,7 @@ package com.example.appgastos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 
@@ -11,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun Calcular(){
-        /* classe que calcula e devolve o resultado pro front */
+    fun Calcular(view: View){
+
         var distancia = 0f
         var preco =0f
         var autonomia = 0f
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         var resultado = (distancia * preco) / autonomia
         var txt_valor = findViewById<TextView>(R.id.textValorTotal)
         txt_valor.text = "R$: ${"%.2f".format(resultado)}"
+
 
 
 
